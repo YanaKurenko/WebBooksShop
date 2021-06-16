@@ -6,8 +6,8 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<h3 class="w-100 my-5 text-center">Список книг</h3>
-    <div class="w-100 text-center">Список книг:</div>
+<h3 class="w-100 my-5 text-center">Список товаров</h3>
+    <div class="w-100 text-center">Список товаров</div>
     <div class="row w-100 d-flex justify-content-center">
         <c:forEach var="book" items="${listBooks}">
           <div class="card m-2" style="max-width: 12rem; max-height: 18rem" >

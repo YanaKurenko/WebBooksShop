@@ -1,22 +1,18 @@
-<%-- 
-    Document   : page1
-    Created on : Nov 25, 2020, 10:14:04 AM
-    Author     : Melnikov
---%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-    <h3 class="w-100 text-center my-5 ">Добавить новую книгу</h3>
+    <h3 class="w-100 text-center my-5 ">Добавить новый товар</h3>
     <div class="row w-50 mx-auto">
-        <a href="uploadCoverForm" class="col-5 offset-4">Загрузить обложку для книги</a>
+        <a href="uploadCoverForm" class="col-5 offset-4">Загрузить фото товара</a>
     </div>
     <div class="row w-50 mx-auto mb-3">
-        <a href="uploadTextForm" class="col-5 offset-4">Загрузить текст для книги</a>
+        <a href="uploadTextForm" class="col-5 offset-4">Загрузить описание товара</a>
     </div>
     <form action="createBook" method="POST">
       <div class="row w-50 my-2 mx-auto">
         <div class="col-4 text-end">
-            Название книги 
+            Название товара 
         </div>
         <div class="col-8 text-start ">
           <input class="w-100" type="text" name="name">
@@ -24,7 +20,7 @@
       </div>
       <div class="row w-50 my-2 mx-auto">
         <div class="col-4 text-end">
-          Автор книги 
+          Производитель 
         </div>
         <div class="col-8 text-start">  
           <input class="col-8" type="text" name="author">
@@ -32,18 +28,10 @@
       </div>
       <div class="row w-50 my-2 mx-auto">
         <div class="col-4 text-end">   
-            Год издания книги 
+            Срок годности 
         </div>
         <div class="col-8 text-start">  
           <input class="col-4" type="text" name="publishedYear">
-        </div>
-      </div>
-      <div class="row w-50 my-2 mx-auto">
-        <div class="col-4 text-end">   
-            ISBN: 
-        </div>
-        <div class="col-8 text-start">  
-          <input class="col-8" type="text" name="isbn">
         </div>
       </div>
       <div class="row w-50 my-2 mx-auto">
@@ -56,7 +44,7 @@
       </div>
       <div class="row w-50 my-2 mx-auto">
         <div class="col-4 text-end">
-            Обложка 
+            Изображение 
         </div>
         <div class="col-8 text-start">     
           <select class="form-select" name="coverId" aria-label="Выбрать обложку">
@@ -69,7 +57,7 @@
       </div>
       <div class="row w-50 my-2 mx-auto">
         <div class="col-4 text-end">
-            Текст книги 
+            Описание товара 
         </div>
         <div class="col-8 text-start">     
           <select class="form-select" name="textId" aria-label="Выбрать файл с текстом">

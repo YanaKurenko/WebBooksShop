@@ -6,14 +6,14 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<h3 class="w-100 my-5 text-center">Список книг в корзине</h3>
+<h3 class="w-100 my-5 text-center">Список товаров в корзине</h3>
     <div class="w-100 text-center">Желаете купить:</div>
     <form action="buyBooks" method="POST">
         <div class="row w-100 d-block">
             <table class="table table-striped table-hover w-50 mx-auto">
                 <thead>
                         <th class="text-end h-5">Отметить</th>
-                        <th class="text-center h-5">Книга</th>
+                        <th class="text-center h-5">товар</th>
                         <th class="text-center h-5">Удалить из корзины</th>
 
                 </thead>
@@ -44,7 +44,7 @@
             </c:forEach>
                 <tr>
                     <td colspan="2">
-                        <button type="submit" class="btn btn-primary mb-5 w-100">Купить отмеченные книги</button>
+                        <button type="submit" class="btn btn-primary mb-5 w-100">Купить отмеченные товары</button>
                     </td>
                 </tr>
                 </tbody>

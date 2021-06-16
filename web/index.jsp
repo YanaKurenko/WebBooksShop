@@ -5,7 +5,7 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<p class="w-100 text-center my-5">Добро пожаловать в нашу библиотеку!</p>
+<p class="w-100 text-center my-5"><b>Отправляйтесь за покупками! </b></p>
 <div class="w-100 d-flex justify-content-center m-2">
     <c:forEach var="book" items="${listBooks}">
       <div class="card m-2" style="max-width: 12rem; max-height: 18rem" >

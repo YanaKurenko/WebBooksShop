@@ -7,7 +7,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<h3 class="w-100 my-5 text-center">Список книг</h3>
+<h3 class="w-100 my-5 text-center">Список товаров</h3>
 
 <div class="w-100 d-flex justify-content-center">
   <c:forEach var="book" items="${listBooks}">
@@ -18,7 +18,7 @@
           <p class="card-text">${book.author}</p>
           <p class="card-text">${book.publishedYear}</p>
           <p class="d-inline">
-            <a href="readBook?bookId=${book.id}" class="link text-nowrap">Читать</a>
+            <a href="readBook?bookId=${book.id}" class="link text-nowrap">купить</a>
             <a href="addToBasket?bookId=${book.id}" class="link text-nowrap">В корзину</a>
           </p>
         </div>
